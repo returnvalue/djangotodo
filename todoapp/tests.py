@@ -1,3 +1,6 @@
-from django.test import TestCase
+from unittest import TestCase
 
-# Create your tests here.
+
+class DummyTest(TestCase):
+    def test_arithmetic(self):
+        self.assertEqual(1 + 1, 2)
