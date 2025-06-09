@@ -1,23 +1,50 @@
-# djangotodo
+# Django Todo App
 
-This example uses Django 5.2 and Bulma 1.0.4 to build a small Todo application.
+This repository contains a small web-based Todo list built with **Django 5** and styled with **Bulma**. The app lets you create tasks, mark them as complete or incomplete, edit existing entries and delete them entirely.
 
-Todo App With Django And Bulma
+## Features
 
-## Running tests
+- Add new tasks from the navigation bar
+- List all todos with visual feedback when they are completed
+- Mark tasks as complete or incomplete
+- Edit task text
+- Remove tasks
 
-The project uses a very small test suite. If Django isn't available in your
-environment, the `manage.py` script falls back to Python's built-in unittest
-runner:
+## Getting Started
+
+### Installation
+
+1. Install Python 3 and `pip` if they are not already on your system.
+2. Install project dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Development Server
+
+Run migrations and start the built-in Django server:
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
+
+Visit `http://localhost:8000/` in your browser to access the app.
+
+To edit a task, choose it from the list and click **Edit Task** in the navigation bar.
+
+## Running Tests
+
+A small test suite is included. Run it with:
 
 ```bash
 python manage.py test
 ```
 
-## Installing dependencies
+The `manage.py` script will fall back to Python's built-in `unittest` runner if Django is not installed.
 
-Use `pip` to install the required packages:
+## Notes
 
-```bash
-pip install -r requirements.txt
-```
+The database uses SQLite by default and comes with a few example tasks pre-populated in `db.sqlite3`. Feel free to delete the database file if you want to start fresh.
+
