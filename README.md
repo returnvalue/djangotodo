@@ -1,6 +1,6 @@
 # djangotodo
 
-In this tutorial, we will use Django on the back end with Bulma CSS on the front end to build a small Todo application.
+This example uses Django 5.2 and Bulma 1.0.4 to build a small Todo application.
 
 [Todo App With Django And Bulma](https://vegibit.com/todo-app-with-django-and-bulma/)
 
@@ -12,4 +12,12 @@ runner:
 
 ```bash
 python manage.py test
+```
+
+## Installing dependencies
+
+Use `pip` to install the required packages:
+
+```bash
+pip install -r requirements.txt
 ```
