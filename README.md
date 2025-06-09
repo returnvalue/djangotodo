@@ -2,7 +2,7 @@
 
 This example uses Django 5.2 and Bulma 1.0.4 to build a small Todo application.
 
-[Todo App With Django And Bulma](https://vegibit.com/todo-app-with-django-and-bulma/)
+Todo App With Django And Bulma
 
 ## Running tests
 
